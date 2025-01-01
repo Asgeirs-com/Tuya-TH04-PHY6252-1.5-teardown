@@ -103,4 +103,19 @@ PHY62x2 - connected Ok
 Reopen COM3 port 1000000 baud... ok  
 
 
-[zipped copy of r00000000-00080000.bin](https://github.com/Asgeirs-com/Tuya-TH04-PHY6252-1.5-teardown/edit/main/r11000000-00080000.zip)  
+Second attempt at dumping original FW, starting at address 0:  
+
+C:\Users\Lenovo\Documents\TH04 PHY6252 teardown\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 0x000000 0x80000  
+RdRegs-PHY62x2 Utility version 23.11.22  
+PHY62x2 - Reset Ok  
+Reopen COM3 port 1000000 baud  
+Revision: b'0x001340c4'  
+Start address: 0x00000000, length: 0x00080000  
+  Time: 1036.141 sec  
+Writes: 1704080 Bytes  
+ Reads: 2228248 Bytes  
+512.000 KBytes saved to file 'r00000000-00080000.bin'  
+
+
+[zipped copy of r00000000-00080000.bin](https://github.com/Asgeirs-com/Tuya-TH04-PHY6252-1.5-teardown/edit/main/r00000000-00080000.zip)   
+

@@ -55,7 +55,7 @@ Writes: 1704206 Bytes
 
 
 
-But bin file contains strange info:  
+But bin file contains strange info, so probably something failed:  
 snip/  
   [Hard fault handler]  
   R0-R3        = 0x%08x 0x%08x 0x%08x 0x%08x  
@@ -66,7 +66,7 @@ snip/
   ´ÿ`ÿ[OSAL]idx %d Func 0x%08x systick %08x rtc %08x  
      -----------dump stack--------------  
 /snip  
-[zipped copy of r11000000-00080000.bin]https://github.com/Asgeirs-com/Tuya-TH04-PHY6252-1.5-teardown/edit/main/r11000000-00080000.zip)
+[zipped copy of r11000000-00080000.bin](https://github.com/Asgeirs-com/Tuya-TH04-PHY6252-1.5-teardown/edit/main/r11000000-00080000.zip)
 
 
 Chip Info:  

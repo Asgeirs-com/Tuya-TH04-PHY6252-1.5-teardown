@@ -53,8 +53,10 @@ Writes: 1704206 Bytes
  Reads: 2228248 Bytes    
 512.000 KBytes saved to file 'r11000000-00080000.bin'  
 
+
+
 But bin file contains strange info:[Hard fault handler]  
-+++
+snip/  
   R0-R3        = 0x%08x 0x%08x 0x%08x 0x%08x  
  R4-R7        = 0x%08x 0x%08x 0x%08x 0x%08x  
  R8-R11       = 0x%08x 0x%08x 0x%08x 0x%08x  
@@ -62,8 +64,8 @@ But bin file contains strange info:[Hard fault handler]
  PSR  = 0x%08x    í àICSR = 0x%08x  
   ´ÿ`ÿ[OSAL]idx %d Func 0x%08x systick %08x rtc %08x  
      -----------dump stack--------------  
-++
-
+/snip  
+[zipped copy of r11000000-00080000.bin]https://github.com/Asgeirs-com/Tuya-TH04-PHY6252-1.5-teardown/edit/main/r11000000-00080000.zip)
 
 
 Chip Info:  

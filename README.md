@@ -3,21 +3,29 @@
 
 Beautiful, minimalistic and clean PCB layout. 
 
-
 Main chip: PHY6252
 
 Sensor: AHT20
 
 LCD Driver: Vinka VKL060
 
-Issue estabilishing reliable readouts in tuya app, seems it is broken when leaving app first time.
+
+
+Issue estabilishing reliable bluetooth readouts in tuya app, seems it is broken when leaving app first time.
 Someone wrote on similar product info that "registration with email in china mainland" was required for it to work, not tried.
 
-GTRV test points map to:
-G = GND,
-T = TX,
-R = RX,
+
+
+G,T,R,V test points map to:
+
+G = GND
+
+T = TX
+
+R = RX
+
 V = Vcc Voltage input
+
 
 Tested connection using USB to 3.3V UART. Using 1000000 baud and script du dump firmware:
 [https://github.com/pvvx/PHY62x2/tree/master/Utils](https://github.com/pvvx/PHY62x2/tree/master/Utils)
@@ -25,41 +33,69 @@ Tested connection using USB to 3.3V UART. Using 1000000 baud and script du dump 
 No reset test point, so had to cut power. First attempt to cut power using Vcc failed, because enough power was sourced trough the serial RX/TX lines...
 
 C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000
+
 RdRegs-PHY62x2 Utility version 23.11.22
+
 PHY62x2 - Error Reset!
+
 Check connection TX->RX, RX<-TX and Chip Power!
+
 
 When cutting ground connection, reset was successfull, but dump failed first try.
 
+
 C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000
+
 RdRegs-PHY62x2 Utility version 23.11.22
+
 PHY62x2 - Reset Ok
+
 PHY62x2 - Error init1!
+
 
 Success second attampt:
 
 C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000
+
 RdRegs-PHY62x2 Utility version 23.11.22
+
 PHY62x2 - Reset Ok
+
 Reopen COM3 port 1000000 baud
+
 Revision: b'0x001340c4'
+
 Start address: 0x11000000, length: 0x00080000
+
   Time: 1065.948 sec
+  
 Writes: 1704206 Bytes
+
  Reads: 2228248 Bytes
+ 
 512.000 KBytes saved to file 'r11000000-00080000.bin'
+
 
 Chip info:
 
 C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdwr_phy62x2.py -p COM3 -b 1000000 i
+
 =========================================================
+
 PHY62x2 Utility version 09.01.24
+
 ---------------------------------------------------------
+
 Connecting...
+
 PHY62x2 - Reset Ok
+
 Revision: b'001340c4 6222M005'
+
 FlashID: 1340c4, size: 512 kbytes
+
 PHY62x2 - connected Ok
+
 Reopen COM3 port 1000000 baud... ok
 
 

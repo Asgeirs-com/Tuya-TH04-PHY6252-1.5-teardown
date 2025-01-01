@@ -55,8 +55,9 @@ Writes: 1704206 Bytes
 
 
 
-But bin file contains strange info:[Hard fault handler]  
+But bin file contains strange info:  
 snip/  
+  [Hard fault handler]  
   R0-R3        = 0x%08x 0x%08x 0x%08x 0x%08x  
  R4-R7        = 0x%08x 0x%08x 0x%08x 0x%08x  
  R8-R11       = 0x%08x 0x%08x 0x%08x 0x%08x  

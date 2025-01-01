@@ -26,7 +26,7 @@ Tested connection using USB to 3.3V UART. Using 1000000 baud and script du dump 
 
 No reset test point, so had to cut power. First attempt to cut power using Vcc failed, because enough power was sourced trough the serial RX/TX lines:  
 
-C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
+C:\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
 RdRegs-PHY62x2 Utility version 23.11.22  
 PHY62x2 - Error Reset!    
 Check connection TX->RX, RX<-TX and Chip Power!
@@ -34,7 +34,7 @@ Check connection TX->RX, RX<-TX and Chip Power!
 
 When cutting ground connection, reset was successfull, but dump failed first try: 
 
-C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
+C:\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
 RdRegs-PHY62x2 Utility version 23.11.22  
 PHY62x2 - Reset Ok  
 PHY62x2 - Error init1!  
@@ -42,7 +42,7 @@ PHY62x2 - Error init1!
 
 Success in doing somthing second attampt:  
 
-C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
+C:\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
 RdRegs-PHY62x2 Utility version 23.11.22  
 PHY62x2 - Reset Ok  
 Reopen COM3 port 1000000 baud  
@@ -66,12 +66,11 @@ snip/
   ´ÿ`ÿ[OSAL]idx %d Func 0x%08x systick %08x rtc %08x  
      -----------dump stack--------------  
 /snip  
-[zipped copy of r11000000-00080000.bin](https://github.com/Asgeirs-com/Tuya-TH04-PHY6252-1.5-teardown/edit/main/r11000000-00080000.zip)
+[zipped copy of r11000000-00080000.bin](https://github.com/Asgeirs-com/Tuya-TH04-PHY6252-1.5-teardown/edit/main/r11000000-00080000.zip)  
 
 
-Chip Info:  
-
-C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdwr_phy62x2.py -p COM3 -b 1000000 i  
+Chip info:  
+C:\PHY62x2-master\Utils>python rdwr_phy62x2.py -p COM3 -b 1000000 i  
 =========================================================  
 PHY62x2 Utility version 09.01.24  
 ---------------------------------------------------------  
@@ -81,6 +80,8 @@ Revision: b'001340c4 6222M005'
 FlashID: 1340c4, size: 512 kbytes  
 PHY62x2 - connected Ok  
 Reopen COM3 port 1000000 baud... ok  
+
+
 
 
 More information related to PHY6252:  

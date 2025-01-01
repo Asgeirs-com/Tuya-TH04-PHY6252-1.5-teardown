@@ -71,9 +71,7 @@ snip/
 
 Chip info:  
 C:\PHY62x2-master\Utils>python rdwr_phy62x2.py -p COM3 -b 1000000 i  
---  
 PHY62x2 Utility version 09.01.24  
---  
 Connecting...  
 PHY62x2 - Reset Ok  
 Revision: b'001340c4 6222M005'  

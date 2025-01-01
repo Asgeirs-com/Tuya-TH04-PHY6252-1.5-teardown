@@ -40,7 +40,7 @@ PHY62x2 - Reset Ok
 PHY62x2 - Error init1!  
 
 
-Success second attampt:  
+Success in doing somthing second attampt:  
 
 C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
 RdRegs-PHY62x2 Utility version 23.11.22  
@@ -52,6 +52,19 @@ Start address: 0x11000000, length: 0x00080000
 Writes: 1704206 Bytes  
  Reads: 2228248 Bytes    
 512.000 KBytes saved to file 'r11000000-00080000.bin'  
+
+But bin file contains strange info:[Hard fault handler]  
++++
+  R0-R3        = 0x%08x 0x%08x 0x%08x 0x%08x  
+ R4-R7        = 0x%08x 0x%08x 0x%08x 0x%08x  
+ R8-R11       = 0x%08x 0x%08x 0x%08x 0x%08x  
+ R12,SP,LR,PC = 0x%08x 0x%08x 0x%08x 0x%08x  
+ PSR  = 0x%08x    í àICSR = 0x%08x  
+  ´ÿ`ÿ[OSAL]idx %d Func 0x%08x systick %08x rtc %08x  
+     -----------dump stack--------------  
+++
+
+
 
 Chip Info:  
 

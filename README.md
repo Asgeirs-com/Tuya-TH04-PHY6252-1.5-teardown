@@ -86,7 +86,7 @@ More information related to PHY6252:
 [https://github.com/duanmubingshuai/test](https://github.com/duanmubingshuai/test)  
 [https://github.com/sullivan986/phy6252-SDK](https://github.com/sullivan986/phy6252-SDK)  
 [https://github.com/pvvx/PHY62x2](https://github.com/pvvx/PHY62x2)  
-
+[Generic phy6202 info video, some SDK background info](https://youtu.be/UbP68mEhnUg?feature=shared&t=1422)  
 
 
 More information related to AHT20:  

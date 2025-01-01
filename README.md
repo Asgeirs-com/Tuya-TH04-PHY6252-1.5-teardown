@@ -21,7 +21,30 @@ R = RX
 V = Vcc Voltage input  
 
 
-Tested connection using USB to 3.3V UART. Using 1000000 baud and script du dump firmware:  
+Tested connection using USB to 3.3V UART, works.
+
+
+More information related to PHY6252:  
+[custom firmware discussions](https://github.com/pvvx/THB2/discussions/82)  
+[https://github.com/duanmubingshuai/test](https://github.com/duanmubingshuai/test)  
+[https://github.com/sullivan986/phy6252-SDK](https://github.com/sullivan986/phy6252-SDK)  
+[https://github.com/pvvx/PHY62x2](https://github.com/pvvx/PHY62x2)  
+[Generic phy6202 info video, some SDK background info](https://youtu.be/UbP68mEhnUg?feature=shared&t=1422) 
+
+
+
+More information related to AHT20:  
+The AHT20 is a high-precision, low-cost temperature and humidity sensor communicating using I2C bus  
+[AHT20-datasheet-2020-4-16.pdf](https://cdn-learn.adafruit.com/assets/assets/000/091/676/original/AHT20-datasheet-2020-4-16.pdf?1591047915)  
+
+More information related to Vinka VKL060:  
+The VKL060 is a RAM Mapping LCD Driver capable of supporting LCD screens with a maximum of 60 patterns (15SEG x 4COM)  
+
+
+[https://szvinka.com/uploadfile/Datasheet/LCD/VKL060/VKL060_V1.3-EN.pdf](https://szvinka.com/uploadfile/Datasheet/LCD/VKL060/VKL060_V1.3-EN.pdf)
+
+
+Using 1000000 baud and script du dump firmware:  
 [https://github.com/pvvx/PHY62x2/tree/master/Utils](https://github.com/pvvx/PHY62x2/tree/master/Utils)
 
 No reset test point, so had to cut power. First attempt to cut power using Vcc failed, because enough power was sourced trough the serial RX/TX lines:  
@@ -80,21 +103,4 @@ PHY62x2 - connected Ok
 Reopen COM3 port 1000000 baud... ok  
 
 
-
-
-More information related to PHY6252:  
-[https://github.com/duanmubingshuai/test](https://github.com/duanmubingshuai/test)  
-[https://github.com/sullivan986/phy6252-SDK](https://github.com/sullivan986/phy6252-SDK)  
-[https://github.com/pvvx/PHY62x2](https://github.com/pvvx/PHY62x2)  
-[Generic phy6202 info video, some SDK background info](https://youtu.be/UbP68mEhnUg?feature=shared&t=1422)  
-
-
-More information related to AHT20:  
-The AHT20 is a high-precision, low-cost temperature and humidity sensor communicating using I2C bus  
-[AHT20-datasheet-2020-4-16.pdf](https://cdn-learn.adafruit.com/assets/assets/000/091/676/original/AHT20-datasheet-2020-4-16.pdf?1591047915)  
-
-More information related to Vinka VKL060:  
-The VKL060 is a RAM Mapping LCD Driver capable of supporting LCD screens with a maximum of 60 patterns (15SEG x 4COM)  
-
-
-[https://szvinka.com/uploadfile/Datasheet/LCD/VKL060/VKL060_V1.3-EN.pdf](https://szvinka.com/uploadfile/Datasheet/LCD/VKL060/VKL060_V1.3-EN.pdf)
+[zipped copy of r00000000-00080000.bin](https://github.com/Asgeirs-com/Tuya-TH04-PHY6252-1.5-teardown/edit/main/r11000000-00080000.zip)  

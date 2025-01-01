@@ -25,6 +25,7 @@ Tested connection using USB to 3.3V UART. Using 1000000 baud and script du dump 
 [https://github.com/pvvx/PHY62x2/tree/master/Utils](https://github.com/pvvx/PHY62x2/tree/master/Utils)
 
 No reset test point, so had to cut power. First attempt to cut power using Vcc failed, because enough power was sourced trough the serial RX/TX lines:  
+
 C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
 RdRegs-PHY62x2 Utility version 23.11.22  
 PHY62x2 - Error Reset!    
@@ -32,6 +33,7 @@ Check connection TX->RX, RX<-TX and Chip Power!
 
 
 When cutting ground connection, reset was successfull, but dump failed first try: 
+
 C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
 RdRegs-PHY62x2 Utility version 23.11.22  
 PHY62x2 - Reset Ok  
@@ -39,6 +41,7 @@ PHY62x2 - Error init1!
 
 
 Success second attampt:  
+
 C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdreg_phy6252.py -p COM3 -b 1000000 0x11000000 0x80000  
 RdRegs-PHY62x2 Utility version 23.11.22  
 PHY62x2 - Reset Ok  
@@ -48,13 +51,13 @@ Start address: 0x11000000, length: 0x00080000
   Time: 1065.948 sec    
 Writes: 1704206 Bytes  
  Reads: 2228248 Bytes    
-512.000 KBytes saved to file 'r11000000-00080000.bin'   
+512.000 KBytes saved to file 'r11000000-00080000.bin'  
 
+Chip Info:  
 
-Chip info:
 C:\Users\Lenovo\Downloads\PHY62x2-master\Utils>python rdwr_phy62x2.py -p COM3 -b 1000000 i  
 =========================================================  
-PHY62x2 Utility version 09.01.24    
+PHY62x2 Utility version 09.01.24  
 ---------------------------------------------------------  
 Connecting...  
 PHY62x2 - Reset Ok  

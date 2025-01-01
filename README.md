@@ -1,6 +1,21 @@
 # Tuya-TH04-PHY6252-1.5-teardown
 ![Image](https://github.com/user-attachments/assets/ba480c1a-26d1-43f0-b91d-9b4272e6b7a7)
 
+Beautiful, minimalistic and clean PCB layout. 
+
+Issue estabilishing reliable readouts in tuya app, seems it is broken when leaving app first time.
+Someone wrote on similar product info that "registration with email in china mainland" was required for it to work, not tried.
+
+GTRV test points map to:
+G = GND
+T = TX
+R = RX
+V = Vcc Voltage input
+
+Tested connection using USB to 3.3V UART. Using 1000000 baud and script du dump firmware:
+[https://github.com/pvvx/PHY62x2/tree/master/Utils](https://github.com/pvvx/PHY62x2/tree/master/Utils)
+
+
 Main chip: PHY6252
 Sensor: AHT20
 LCD Driver: Vinka VKL060

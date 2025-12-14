@@ -33,6 +33,7 @@ More information related to PHY6252:
 
 
 
+
 More information related to AHT20:  
 The AHT20 is a high-precision, low-cost temperature and humidity sensor communicating using I2C bus  
 [AHT20-datasheet-2020-4-16.pdf](https://cdn-learn.adafruit.com/assets/assets/000/091/676/original/AHT20-datasheet-2020-4-16.pdf?1591047915)  
@@ -119,3 +120,8 @@ Writes: 1704080 Bytes
 
 [zipped copy of r00000000-00080000.bin](https://github.com/Asgeirs-com/Tuya-TH04-PHY6252-1.5-teardown/edit/main/r00000000-00080000.zip)   
 
+Custom firmware flash tip:
+Through USB-UART adapter, APP can be written immediately after boot. For example:
+
+python rdwr_phy62x2.py -p COM11 -e wh ./bin/BOOT_TH04_v21.hex
+python rdwr_phy62x2.py -p COM11 -r we 0x10000 ./bin/TH04_v21.bin

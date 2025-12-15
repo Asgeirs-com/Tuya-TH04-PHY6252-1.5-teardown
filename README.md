@@ -125,3 +125,5 @@ Through USB-UART adapter, APP can be written immediately after boot. For example
 
 python rdwr_phy62x2.py -p COM11 -e wh ./bin/BOOT_TH04_v21.hex
 python rdwr_phy62x2.py -p COM11 -r we 0x10000 ./bin/TH04_v21.bin
+
+And no worries, using the https://pvvx.github.io/THB2/web/PHY62x2BTHome.html webpage, mac address can be changed after flashing -as there seems to be some cheating in mac address reuse somewhere.

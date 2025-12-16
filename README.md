@@ -25,6 +25,8 @@ Tested connection using USB to 3.3V UART, works.
 
 
 More information related to PHY6252:  
+[Great custom firmware using BTHomev2 BLE broadcasts:] (https://github.com/pvvx/THB2)
+
 [custom firmware discussions](https://github.com/pvvx/THB2/discussions/82)  
 [https://github.com/duanmubingshuai/test](https://github.com/duanmubingshuai/test)  
 [https://github.com/sullivan986/phy6252-SDK](https://github.com/sullivan986/phy6252-SDK)  
